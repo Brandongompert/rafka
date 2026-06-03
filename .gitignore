@@ -1,0 +1,31 @@
+# Rust / Cargo
+/target
+
+# Rafka broker data (local dev)
+/data
+
+# Node.js
+/rafka-node/node_modules
+/rafka-node/dist
+
+# napi-rs compiled binaries — built locally, shipped via CI prebuilts
+/rafka-node/*.node
+
+# Yarn
+/rafka-node/.yarn/cache
+/rafka-node/.yarn/unplugged
+/rafka-node/.yarn/build-state.yml
+/rafka-node/.yarn/install-state.gz
+/rafka-node/.pnp.*
+
+# Project session notes
+prompt.md
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

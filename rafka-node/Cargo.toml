@@ -1,0 +1,17 @@
+[package]
+name = "rafka-node"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+# cdylib produces the .node native addon file that Node.js loads.
+crate-type = ["cdylib"]
+
+[dependencies]
+rafka = { path = ".." }
+napi = { version = "2", features = ["async", "tokio_rt"] }
+napi-derive = "2"
+tokio = { version = "1", features = ["sync"] }
+
+[build-dependencies]
+napi-build = "2"
