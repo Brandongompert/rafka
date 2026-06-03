@@ -146,28 +146,3 @@ cargo test          # all unit + integration tests (49 total)
 cargo test -p rafka # library tests only
 ```
 
-## Publishing
-
-**Rust crate (crates.io):**
-
-```bash
-cargo publish -p rafka
-```
-
-**Node.js package (npm):**
-
-```bash
-cd rafka-node
-yarn npm publish --access public
-```
-
-The Node package requires a prebuilt `.node` binary for the target platform. In CI, build with `yarn build` on each platform and attach the binaries before publishing.
-
-## Roadmap
-
-- [ ] Consumer groups — coordinate partition assignment across multiple consumers
-- [ ] Multi-broker clustering — leader election via Raft
-- [ ] GitHub Actions — cross-platform prebuilt binaries for the npm package
-- [ ] Message retention policies — time-based and size-based log compaction
-- [ ] Schema registry
-- [ ] CLI tooling (`rafka-cli`)

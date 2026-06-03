@@ -18,7 +18,8 @@
 /rafka-node/.yarn/install-state.gz
 /rafka-node/.pnp.*
 
-# Project session notes
+# Local dev notes
+.dev/
 prompt.md
 
 # macOS
